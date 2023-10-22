@@ -119,8 +119,9 @@ We perform hyperparameter tuning for the models to optimize their performance.
 `rf_grid_search = GridSearchCV(RandomForestRegressor(), param_grid, cv=5, scoring='neg_mean_absolute_error')
 rf_grid_search.fit(X, y)`
 
-`# Hyperparameter tuning for XGBoost
-xgb_param_grid = {
+`# Hyperparameter tuning for XGBoost`
+
+`xgb_param_grid = {
     'n_estimators': [100, 200, 300],
     'max_depth': [3, 4, 5],
 }
