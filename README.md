@@ -143,9 +143,9 @@ gb_grid_search.fit(X, y)
 
 We test the models using a test dataset and evaluate their performance using metrics such as **Mean Absolute Error (MAE)**.
 
-`y_pred = xgb_grid_search.predict(X_test)
-mean_absolute_error(y_test, y_pred)
-`
+`y_pred = xgb_grid_search.predict(X_test)`
+
+`mean_absolute_error(y_test, y_pred)`
 
 
 # Testing with New Dataset
