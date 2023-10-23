@@ -16,7 +16,7 @@ import sklearn as sk
 from sklearn.model_selection import KFold, GridSearchCV
 from sklearn.model_selection import train_test_split
 from sklearn.model_selection import cross_val_score
-from sklearn.model_selection import SimpleImputer
+from sklearn.impute import SimpleImputer
 from sklearn.metrics import mean_absolute_error, mean_squared_error,r2_score
 from sklearn.ensemble import RandomForestRegressor, HistGradientBoostingRegressor
 from sklearn.preprocessing import LabelEncoder, StandardScaler
@@ -259,7 +259,7 @@ XGB_crosval_score
 # Hyperparameter Tuning
 param_grid = {
     'n_estimators': [100, 200, 300],
-    'max_depth': [None, 10, 20, 30],
+    'max_depth': [None, 10, 20, 25],
 }
 
 # Hyperparameter tuning for Random Forest
